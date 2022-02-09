@@ -1,0 +1,631 @@
+/* Preloader for pages */
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  z-index: 100;
+}
+
+.less-size-title{
+  font-size: 40px;
+}
+
+
+@font-face {
+  font-family: 'Pacifico'; 
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+  url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2'); 
+
+  font-display: swap;
+}
+
+.current_page_indicator{
+  margin-top: -35px;
+}
+
+.global_block_page{
+  /*margin-top: 70px;*/
+}
+
+/* Google Translate */
+
+.translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+
+.goog-logo-link{
+ display:none !important;
+}
+.goog-te-banner{
+  visibility: hidden !important;
+  display: none !important;
+}
+.goog-te-gadget {
+ color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+/* *** */
+
+.spinner-block{
+  cursor: wait;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0%{
+    transform:scale(.1);
+    opacity: 0;
+  }
+  50%{
+    opacity: .4;
+  }
+  100%{
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+.spinner {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  z-index: 105;
+}
+
+.wave_1{
+  animation: pulse 2s infinite;
+}
+.wave_2{
+  animation: pulse 2s infinite .3s;
+}
+.wave_3{
+  animation: pulse 2s infinite .6s;
+}
+
+.wave_4{
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+/* Loader */
+.btn-loading{
+  position: relative;
+  box-sizing: border-box;
+}
+.loader{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: 2px solid var(--color-shadow);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.background-white{
+  background-color: white;
+}
+
+/* *** */
+.goToTop_block{
+
+}
+.goToTop_btn{
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  box-shadow: 4px 4px 8px #333;
+  border-radius: var(--border-radius-size);
+  display: inline-block;
+  cursor: pointer;
+  z-index: 40;
+}
+.goToTop_btn_hide{
+  display: none;
+}
+/* Go to top btn */
+
+/* *** */
+
+@-ms-viewport {
+  width: device-width;
+}
+* {box-sizing: border-box;}
+a{
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover{
+  color: var(--color-tertiary);
+}
+h2{
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-family: 'Lato';
+  color: var(--color-text);
+}
+
+.vertical-align-bottom{
+  vertical-align: bottom !important;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.position-relative{
+  position: relative !important;
+}
+.float-right{
+  float: right !important;
+}
+.padding-vertical{
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+.form-required{
+  content: "*" !important;
+}
+.form-required::after{
+  content: "*" !important;
+}
+.margin-bottom-none{
+  margin-bottom: 0 !important;
+}
+.margin-top-none{
+  margin-top: 0 !important;
+}
+citaion{
+  font-style: italic;
+}
+.color-primary{
+  color: var(--color-primary);
+}
+
+/* Ajout de l'aside sur certainnes pages */
+.aside .aside-block{
+  background-color: var(--color-shadow);
+  max-height: 500px;
+  word-wrap: break-word;
+  overflow: auto;
+  padding: 15px;
+  border-top: 4px solid var(--color-primary);
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.aside .aside-block .link{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.aside .aside-block .link a{
+  background-color: var(--color-secondary);
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: var(--border-radius-size);
+  width: 100% !important;
+  box-shadow: 4px 4px 2px #aaa;
+}
+.aside .aside-block .link a:hover{
+  background-color: var(--color-primary);
+}
+/* *** */
+
+.container-box{
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  padding: 0!important;
+  margin-bottom:1px;
+  display: block;
+}
+.container-box-shadow{
+  height: 100%;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+}
+.container-box-body{
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+.container-title{
+  text-align: center;
+}
+
+/* Pour les textes de présentation des page contenue dans la classe Session::presentationPage() */
+.presentaion_page_block{
+  position : relative;
+  background-color: var(--color-shadow);
+  margin-top: 5px;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+}
+.presentaion_page_text{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+}
+/* *** */
+
+/* Aspect général des bouttons */
+.btn{
+  border: none;
+  padding: 10px 25px !important;
+  border-radius: var(--border-radius-size);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary{
+  color: var(--btn-primary-text-color);
+  background-color: var(--btn-primary-bg-color);
+}
+.btn-primary:hover{
+  background-color: var(--btn-primary-bg-hover-color);
+}
+.btn-danger{
+  color: var(--btn-danger-text-color);
+  background-color: var(--btn-danger-bg-color);
+}
+.btn-danger:hover{
+  background-color: var(--btn-danger-bg-hover-color);
+}
+
+.background-danger{
+  background-color: var(--color-danger);
+  color: white !important;
+}
+.background-danger:hover{
+  background-color: var(--color-danger-dark) !important;
+  color: white !important;
+}
+
+
+/* Pour les styles des éléments du dashboard, menu pour laptop, l'affichage d'offre, ... */
+
+.suggest_container{
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+.suggest_block{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-left: 3px solid var(--color-secondary);
+  border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
+}
+.suggest_block:hover{
+  box-shadow: 0px 0px 6px var(--color-text);
+}
+.suggest_block i{
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+.margin-right-5{
+  margin-right: 5px;
+}
+.background-primary{
+  color: var(--color-primary);
+}
+.suggest_row{
+  padding: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.suggest_col{
+  display: inline-block;
+}
+.suggest_title{
+  max-width: 100%;
+  max-height: 1.4em;
+  overflow: hidden;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* *** */
+
+/* modal for feedback submited form */
+.alert_modal_shadow{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 50;
+  display: none;
+}
+.alert_modal_block{
+  display: inline-block;
+  background-color: white;
+  position: fixed;
+}
+.alert_modal_body{
+  box-sizing: border-box;
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  overflow: auto;
+}
+.alert_modal_body i{
+  display: block;
+  color: var(--color-success);
+  margin-bottom: 15px;
+  font-size: 2.8em;
+}
+.alert_modal_footer{
+  border-top: 1px solid var(--color-shadow);
+  text-align: center;
+  box-sizing: border-box;
+}
+.alert_modal_footer .btn{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* *** */
+
+
+/* current_page_indicator */
+.current_page_indicator{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* *** */
+
+/***** Media Query *****/
+
+/* Mobile */
+@media (max-width: 575px) {
+  /* Pour les textes de présentation des page contenue dans la classe Session::presentationPage() */
+  .presentaion_page_text{
+    padding: 50px 15px !important;
+    font-size: 1.5em;
+  }
+  /* *** */
+
+
+  .alert_modal_block{
+    top: 30% !important;
+    left: 0% !important;
+    right: 0% !important;
+    border-radius: 0px !important;
+  }
+
+  /* AOST */
+  .presentation_mobile{
+    display: inline-block !important;
+  }
+  .presentation_tablette{
+    display: none !important;
+  }
+}
+
+/* Tablette only */
+@media (min-width: 576px) and (max-width: 991px) {
+  /* AOST */
+  .presentation_mobile{
+    display: none !important;
+  }
+  .presentation_tablette{
+    display: inline-block !important;
+  }
+}
+
+/* Tablette */
+@media (max-width: 991px) {
+  .hide-on-mobile{
+    display: none !important;
+  }
+  .hide-on-laptop{
+    display: inline-block !important;
+  }
+  .container-title{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .container-box{
+    /*height: 250px;*/
+  }
+  .container-box-body{
+    text-align: center;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Pour les textes de présentation des page contenue dans la classe Session::presentationPage() */
+  .presentaion_page_text{
+    padding: 80px 15px;
+    font-size: 1.5em;
+  }
+  /* *** */
+
+  .alert_modal_block{
+    top: 30%;
+    left: 25%;
+    right: 25%;
+    border-radius: var(--border-radius-size);
+  }
+
+  /* current_page_indicator */
+  .current_page_indicator{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* *** */
+
+  .goog-te-gadget {
+    margin-bottom: 15px !important;
+    margin-right: -15px;
+  }
+  .btn-google-translate{
+    position: fixed;
+    right: 0px;
+    right: 80px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+  .hide-on-mobile{
+    display: inline-block !important;
+  }
+  .hide-on-laptop{
+    display: none !important;
+  }
+  /* AOST */
+  .presentation_mobile{
+    display: none !important;
+  }
+  .presentation_tablette{
+    display: none !important;
+  }
+
+  .goog-te-gadget {
+   margin-top: 15px;
+ }
+
+ .offset-10-laptop{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+.padding-horizontal{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-title{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.container-box-body{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container-box{
+  /*height: 400px;*/
+}
+
+/* Ajout de l'aside sur certainnes pages */
+.section_asside_block{
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: 60% 35%;
+}
+.section{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.aside{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.left_right_container{
+  margin-top: 15px;
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: 50% 50%;
+}
+.left-block{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.right-block{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+/* Pour les textes de présentation des page contenue dans la classe Session::presentationPage() */
+.presentaion_page_text{
+  padding: 100px 15px;
+  font-size: 2.5em;
+}
+/* *** */
+
+/* Aside block */
+.aside{
+  position: relative;
+}
+.aside-block{
+  position: absolute;
+  top: -50px;
+}
+.aside-block-fixed{
+  position: fixed !important;
+  width: 28%;
+  box-sizing: border-box;
+  top: 70px;
+}
+.aside-block-absolute{
+  position: absolute;
+  bottom : 15px;
+  width: 100%;
+}
+.aside .aside-block{
+  border-radius: 0 0 var(--border-radius-size) var(--border-radius-size);
+}
+/* *** */
+
+.alert_modal_block{
+  top: 30%;
+  left: 35%;
+  right: 35%;
+  border-radius: var(--border-radius-size);
+}
+}
+
+/* TV */
+@media (min-width: 1441px) {
+}
