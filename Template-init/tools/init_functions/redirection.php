@@ -1,7 +1,6 @@
 <?php
 require_once 'init.php';
 require_once _APP_PATH.'tools/init_functions/functions.php';
-require_once _APP_PATH.'tools/init_functions/Session.class.php';
 require_once _APP_PATH.'tools/init_functions/import-class.php';
 
 function redirection($title, $pageContain, $currentPage, $currentSubPage, $css, $js){

@@ -1,3 +1,3 @@
 <?php
-    header("location: admins/");
+	header("location: pages/home/");
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 //Nom du dossier du projet
-$project_name="aost";
+$project_name="HIV-app";
   //Chemins par defaut du projet;
 $root_path = $_SERVER["DOCUMENT_ROOT"]."/".$project_name."/";
   define('_APP_PATH', $root_path); // Pour les liens PHP

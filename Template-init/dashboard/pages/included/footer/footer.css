@@ -1,0 +1,145 @@
+footer{
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding-top: 15px;
+}
+.footer-logo{
+
+}
+.footer-container{
+  box-sizing: border-box;
+}
+.footer-logo h1{
+  display: inline-block;
+  margin-left: 15px;
+}
+.footer-logo img{
+  height: 40px;
+}
+.footer-contain{
+  display: inline-block;
+}
+.footer-contain h3{
+  margin-top: 0;
+  color: white !important;
+  text-transform: uppercase;
+}
+.footer-contain:first-child{
+  margin-left: 0;
+}
+.footer-bottom{
+  background-color: var(--footer-bg-color-dark);
+  padding: 15px 0;
+  font-size: 0.8em;
+}
+
+.material-icons{
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+
+/***** Media Query *****/
+
+/* Mobile */
+@media (max-width: 575px) {
+  .footer-contain{
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 0px !important;
+  }
+  .contact_us{
+    padding-left: 0px !important;
+  }
+  .authors{
+    display: block;
+    margin: 0;
+  }
+  .authors span{
+    display: block;
+  }
+  .copyright{
+
+  }
+
+  .footer-bottom{
+    text-align: center;
+  }
+}
+
+/* Tablette */
+@media (max-width: 991px) {
+  .footer-contain{
+    width: 32%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .contact_us{
+    padding-left: 50px;
+  }
+  .footer-logo h1{
+    font-size: 1.1em;
+  }
+  .footer-logo img{
+    margin-bottom: -12px;
+  }
+  .footer-body{
+    padding: 15px;
+  }
+  .footer-contain p{
+    font-size: 0.9em;
+  }
+}
+
+/* Tablette & Laptop */
+@media (min-width: 576px) {
+  .authors{
+    float: right;
+    margin-right: 15px;
+  }
+  .copyright{
+
+  }
+
+  .footer-bottom{
+    padding: 15px;
+    text-align: left;
+  }
+
+  .footer-contain:last-child{
+    width: 62%;
+  }
+}
+/* Laptop */
+@media (min-width: 992px) {
+  .footer-body{
+    padding: 0;
+  }
+  .footer-logo{
+    margin-bottom: 0px !important;
+  }
+  .footer-logo h1{
+    font-size: 1.4em;
+  }
+  .footer-contain p{
+    font-size: 1em;
+  }
+  .footer-logo img{
+    margin-bottom: -8px;
+  }
+  .footer-contain{
+    width: 32%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-top: none !important;
+    margin-right: 5px;
+  }
+  .contact_us{
+    padding-left: 90px !important;
+  }
+}
+
+/* TV */
+@media (min-width: 1441px) {
+}

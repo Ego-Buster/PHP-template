@@ -1,3 +1,3 @@
 <?php
-header("location: pages/home/");
+    header("location: dashboard/pages/home/");
 ?>
